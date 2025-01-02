@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      .main {
+        padding: 14px;
+        margin: 14px;
+        background-color: red;
+      }
+      .sec {
+        padding: 14px;
+        margin: 14px;
+        background-color: green;
+      }
+      .child {
+        padding: 14px;
+        margin: 14px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="main">
+      <div class="sec">
+        <div class="child">I am a child.</div>
+      </div> -->
+      <p id="hello">Hello World</p>
+      <button id="btn">Click me</button>
+    </div>
+    <script>
+      let button = document.querySelector("#btn");
+      // let child = document.getElementsByClassName("child");
+      // child.addEventListener("click", ()=>{
+      //     alert("I am a child");
+      // })
+      button.addEventListener("click", (e) => {
+        document.getElementById("hello").innerHTML =
+          "Welcome to this <b>Cursed</b> World";
+      });
+      button.addEventListener("contextmenu", ()=>{
+    alert("Dont hack us by Right click Please")
+})
+    </script>
+  </body>
+</html>

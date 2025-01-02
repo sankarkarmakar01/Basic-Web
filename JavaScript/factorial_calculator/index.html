@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial Calculator</title>
+  </head>
+  <body>
+    <form onsubmit="return false;">
+      <label for="number">Enter the number:</label>
+      <input type="number" name="number" id="number" required /><br /><br />
+      <button type="submit" onclick="Calculate()">Submit</button>
+      <p id="ans"></p>
+    </form>
+    <script>
+      function Calculate() {
+        let num = document.getElementById("number").value;
+        let fact = 1;
+        for (let i = 1; i <= num; i++) {
+          fact = fact * i;
+        }
+        document.getElementById("ans").innerHTML = fact;
+      }
+    </script>
+  </body>
+</html>
