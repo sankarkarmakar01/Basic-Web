@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psudo Elements</title>
+    <style>
+        ::marker{
+            color: red;
+            font-size: 25px;
+        }
+      h1::after {
+        content: " World!";
+        color: red;
+        background-color: aquamarine;
+      }
+      p::before {
+        content: "Hello ";
+        color: blue;
+      }
+      p::first-letter {
+        font-size: 24px;
+        color: blueviolet;
+        padding: 2px;
+      }
+      p::first-line {
+        color: cadetblue;
+      }
+      ::selection{
+        color: white;
+        background-color: greenyellow;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+        <li>Milk</li>
+        <li>Tea</li>
+        <li>Coffee</li>
+      </ul>
+    <div>
+      <h1>Hello</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+        consequuntur asperiores nobis quam repellendus corporis, eaque, eveniet
+        culpa laudantium ea blanditiis ex illo sed dolore deserunt error alias
+        excepturi quod.
+      </p>
+    
+    </div>
+  </body>
+</html>

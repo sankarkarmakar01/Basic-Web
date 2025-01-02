@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom properties / variables</title>
+    <style>
+      :root {
+        --color: red;
+        --subcolor: rgb(243, 108, 108);
+        --acolor: #0ff7ff;
+      }
+      nav {
+        background-color: var(--color);
+        padding: 1rem;
+        border: 20px solid var(--subcolor);
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li {
+        list-style: none;
+      }
+      ul li a {
+        text-decoration: none;
+        color: var(--acolor);
+        font-size: 25px;
+      }
+      p {
+        background-color: var(--subcolor);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      voluptas deleniti consequatur dolores nihil provident quasi, ipsa magni
+      accusantium quaerat quibusdam dolor esse quae dolorum omnis, numquam
+      voluptates ipsam deserunt.
+    </p>
+  </body>
+</html>

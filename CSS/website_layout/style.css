@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+header nav{
+    background-color: blueviolet;
+    
+}
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.container {
+    background-color: green;
+    margin: 12px 34px;
+    padding: 55px 23px;
+    text-align: center;
+}
+}
+.div1,.div2{
+    display: inline-block;
+    height: 420px;
+    width: 420px;
+    background-color: red;
+    margin: 50px;
+    margin-left: 150px;
+   
+}
+.div2{
+    background-color: green;
+    position: relative;
+    float: right;
+    margin-right: 150px;
+}

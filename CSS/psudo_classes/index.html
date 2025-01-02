@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psudo Classes</title>
+    <style>
+      a:active {
+        background-color: yellow;
+      }
+      input:checked {
+        height: 50px;
+        width: 50px;
+      }
+      input[type="text"]:enabled {
+        background: #ffff00;
+      }
+
+      input[type="text"]:disabled {
+        background: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">This is a link</a><br />
+    <form action="">
+      <input type="radio" checked="checked" value="male" name="gender" />
+      Male<br />
+      <input type="radio" value="female" name="gender" /> Female<br />
+      <input type="checkbox" checked="checked" value="Bike" /> I have a bike<br />
+      <input type="checkbox" value="Car" /> I have a car
+      <br />
+      <input type="text" value="active" name="" id="">
+      <input type="text" disabled="disabled" value="Disneyland" />
+    </form>
+  </body>
+</html>

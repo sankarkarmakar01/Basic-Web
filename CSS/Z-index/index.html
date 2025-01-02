@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z - index</title>
+    <style>
+      .div1 {
+        background-color: blue;
+        position: inherit;
+      }
+      .div2{
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">I am div 1</div>
+    <div class="div2">I am another div</div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+  </body>
+</html>

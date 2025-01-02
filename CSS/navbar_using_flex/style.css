@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+body header nav ul {
+    display: flex;
+}
+
+body header nav ul li {
+
+    list-style: none;
+    margin-top: 18px;
+
+}
+
+body header nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+nav img,
+ul {
+    padding: 35px;
+}
+
+nav img {
+    width: 260px;
+}
+
+body header nav ul li a:hover {
+    color: rgba(0, 0, 0, 0.76);
+}
