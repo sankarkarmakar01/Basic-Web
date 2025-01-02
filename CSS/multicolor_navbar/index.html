@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-color Navbar</title>
+    <style>
+        :root{
+            --primary-color: red;
+            --secondary-color:#f56d6d;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ccc;
+        }
+        nav{
+            background-color: var(--primary-color);
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            list-style: none;
+            padding: 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white
+        }
+        @media screen and (max-width:455px) {
+            nav{
+                background-color: var(--secondary-color);
+            }
+            ul{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
