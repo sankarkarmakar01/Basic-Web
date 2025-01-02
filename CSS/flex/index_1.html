@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container {
+            display: flex;border: 2px solid black;
+            /* padding: 20px; */
+            /* height: 400px; */
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 600px;
+            /* align-items: center; */
+            /* align-content: center; */
+        }
+        .item{
+            width: 50px;
+            height: 50px;
+            background-color: #b106f5;
+            margin: 10px;
+        }
+        .item1{
+            background-color: blue;
+            align-self:baseline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <!-- <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+    </div>
+</body>
+</html>

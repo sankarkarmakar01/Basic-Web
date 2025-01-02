@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+PL:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Philosopher", sans-serif;
+}
+
+body header nav {
+    background-color: #080825;
+}
+
+body header nav .first {
+    display: flex;
+}
+
+body header nav .second {
+    display: flex;
+}
+
+body header nav .first img {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-left: 20px;
+    filter: drop-shadow(0 0 6px white);
+}
+body header nav .first img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+body header nav .second ul {
+    display: flex;
+}
+
+body header nav .second ul li {
+    list-style: none;
+    display: flex;
+    margin: 0 20px;
+
+}
+
+body header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+body header nav .second ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: drop-shadow(0 0 4px white); */
+}
+
+header nav .first p {
+    color: white;
+    font-size: 22px;
+    margin-left: 30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    filter: drop-shadow(0 0 6px white);
+}
+header nav .first p:hover{
+    color: #29f3d8;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 21, 0.842));
+    transform: scale(1.1);
+    transition: 2s;
+}
+header nav .first,
+.second {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body header nav .second ul li a i {
+    /* padding: 2px; */
+    font-size: 10px;
+    margin-left: 8px;
+    color: #c0c0c0;
+    /* filter: drop-shadow(0 0 1px white); */
+}
+
+body header nav .second ul li a:hover{
+    color: #ece5e5;
+    transition: 1s;
+    transform: scale(1.1);
+}

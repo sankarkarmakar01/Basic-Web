@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        *{
+            background-color: #ccc;
+        }
+        h1{
+            border: 2px solid red;
+            display: inline;
+        }
+        p{
+            display: inline;
+            border: 2px solid green;
+            padding: 22px;
+        }
+        span{
+            border: 2px solid blue;
+            display: block;
+        }
+        #first{
+            display: inline-block;
+            margin: 10px;
+            padding: 22px;
+        }
+        .none{
+            margin-top: 5px;
+            border: 2px solid rgb(16, 241, 73);
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph of text.</p>
+    <span id="first">I am an inline element</span>
+    <span id="sceond">I am also an inline element</span>
+    <div class="none">I am a div</div>
+</body>
+</html>
